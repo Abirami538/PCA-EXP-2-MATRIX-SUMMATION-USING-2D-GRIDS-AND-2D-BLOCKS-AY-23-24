@@ -1,4 +1,4 @@
-# PCA-EXP-2-Matrix-Summation-using-2D-Grids-and-2D-Blocks-AY-23-24
+# EXP 2-Matrix Summation using 2D Grids and 2D Blocks
 
 <h3>NAME : HARSHITHA V</h3>
 <h3>REGISTER NO : 212223230074</h3>
