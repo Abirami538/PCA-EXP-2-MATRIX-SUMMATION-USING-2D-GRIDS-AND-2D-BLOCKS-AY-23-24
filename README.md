@@ -3,7 +3,7 @@
 <h3>NAME : HARSHITHA V</h3>
 <h3>REGISTER NO : 212223230074</h3>
 <h3>EX. NO : 2</h3>
-<h3>DATE : 20-10-2024</h3>
+<h3>DATE : 03-08-2026</h3>
 <h1> <align=center> MATRIX SUMMATION WITH A 2D GRID AND 2D BLOCKS </h3>
 i.  Use the file sumMatrixOnGPU-2D-grid-2D-block.cu
 ii. Matrix summation with a 2D grid and 2D blocks. Adapt it to integer matrix addition. Find the best execution configuration. </h3>
@@ -608,6 +608,10 @@ CHECK(cudaDeviceSynchronize());
 ### Observation
 
 The float-based CUDA matrix addition completed faster (**0.026711 sec**) compared to the integer-based version (**0.097916 sec**) on the Tesla T4 GPU. Both versions successfully verified the output with "Arrays match."
+
+### Execution Configuration
+
+Different 2D block configurations were tested for integer matrix addition. The configuration with a block size of (32,32) and a grid size of (512,512) provided efficient execution on the Tesla T4 GPU. This configuration uses 1024 threads per block and achieved correct results with optimized GPU utilization. 
 
 ## OUTPUT:
 
